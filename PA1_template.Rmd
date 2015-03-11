@@ -51,7 +51,7 @@ Code below calculates mean and median and ignores NAs.
 
 Below is the histogram of Steps per day, ignoring NAs.
 
-```{r histogram,fig.height=5, fig.width=5}
+```{r 001-histogram,fig.height=5, fig.width=5}
         hist(stepsperday, main="Plot 1: Histogram", xlab= "Steps per day", col="red")
 ```
 
@@ -66,7 +66,7 @@ To create the time series plot, the mean steps per interval across all days is c
         intsteps <- cbind("interval" = xx, "Mean Steps per interval" = stepsperinterval)
 ```
 
-```{r plot, fig.height=5, fig.width=5}
+```{r 002-plot, fig.height=5, fig.width=5}
         plot(intsteps, type="l", main= "Plot 2: Time-series of Mean steps per interval")
 ```
 
@@ -111,7 +111,7 @@ Now the mean and median steps can be calculated for the Imputed values.
 
 Also, the histogram can be replotted.
 
-```{r histogram2,fig.height=5, fig.width=5}
+```{r 003-histogram,fig.height=5, fig.width=5}
         hist(stepsperdayi, main = "Plot 3: Histogram", xlab="Imputed Steps per day", 
                                                                                 col="red")
 ```
@@ -148,7 +148,7 @@ A new factor variable is created to indicate "weekday" or "weekend" using the wd
 
 Using the lattice package in R, an XYplot is created to compare the weekday average trend by time interval with that during the weekend.
 
-```{r panelplot, fig.height=5}
+```{r 004-panelplot, fig.height=5}
         xyplot(mean_steps~interval|period, y2, type="l", layout=c(1,2), 
                ylab="Number of Steps", 
                main="Plot 4: Weekday v. Weekend activity comparison")

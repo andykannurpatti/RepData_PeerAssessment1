@@ -63,7 +63,7 @@ Below is the histogram of Steps per day, ignoring NAs.
         hist(stepsperday, main="Plot 1: Histogram", xlab= "Steps per day", col="red")
 ```
 
-![](PA1_template_files/figure-html/histogram-1.png) 
+![](PA1_template_files/figure-html/001-histogram-1.png) 
 
 ## What is the average daily activity pattern?
 
@@ -82,7 +82,7 @@ To create the time series plot, the mean steps per interval across all days is c
         plot(intsteps, type="l", main= "Plot 2: Time-series of Mean steps per interval")
 ```
 
-![](PA1_template_files/figure-html/plot-1.png) 
+![](PA1_template_files/figure-html/002-plot-1.png) 
 
 The time interval when the maximum activity (measured as number of steps) can be easily extracted by using the code chunk below.
 
@@ -146,7 +146,7 @@ Also, the histogram can be replotted.
                                                                                 col="red")
 ```
 
-![](PA1_template_files/figure-html/histogram2-1.png) 
+![](PA1_template_files/figure-html/003-histogram-1.png) 
 
 Comparing the mean and median values of the original dataset versus the imputed dataset, we can see that the mean and median values are now higher.  Interestingly, the mean and median values of the imputed steps coincide. Again, the values are rounded for ease of reading.
 
@@ -196,4 +196,4 @@ Using the lattice package in R, an XYplot is created to compare the weekday aver
                main="Plot 4: Weekday v. Weekend activity comparison")
 ```
 
-![](PA1_template_files/figure-html/panelplot-1.png) 
+![](PA1_template_files/figure-html/004-panelplot-1.png) 
